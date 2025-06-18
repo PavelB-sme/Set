@@ -37,7 +37,7 @@ describe('Класс Team', () => {
     expect(consoleErrorSpy).toHaveBeenCalledWith(`Персонаж ${character.name} уже в команде`)
   });
 
-  test('test hero team addition', () => {
+  test('hero team addition', () => {
    
     team.addAll({name: 'мечник', damage: 50},
       {name: 'лучник', damage: 50},
@@ -48,7 +48,7 @@ describe('Класс Team', () => {
     expect(team.members.length).toBe(3);
   });
 
-  test('test convertation Set', () => {
+  test('convertation Set', () => {
     const character = {name: 'мечник', damage: 50};
     team.add(character);
     
