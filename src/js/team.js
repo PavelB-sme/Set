@@ -31,12 +31,3 @@ export default class Team {
     return Array.from(this.members)
   }
 }
-
-let team = new Team;
-
-
-team.add({name: 'мечник', damage: 50})
-team.add({name: 'лучник', damage: 50});
-team.add({name: 'мечник', damage: 50})
-
-console.log(team);
